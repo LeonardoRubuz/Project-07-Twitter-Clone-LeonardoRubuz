@@ -1,7 +1,7 @@
 function InnerEditor() {
     return ( 
         <form action="" className="tweet-editor-form">
-            <input type="text" className="tweet-editor-input" />
+            <input type="text" className="tweet-editor-input" placeholder="What's happening?" />
             <div className="tweet-editor-buttons">
                 <ul className="tweet-editor-actions">
                     <li></li>
