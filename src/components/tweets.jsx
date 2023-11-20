@@ -1,7 +1,7 @@
-function Tweets() {
+function Tweets({ children }) {
     return ( 
         <section className="tweets">
-            
+            { children }
         </section>
      );
 }
