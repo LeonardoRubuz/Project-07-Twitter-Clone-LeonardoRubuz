@@ -1,8 +1,8 @@
 function TweetEditor({ children }) {
     return ( 
-        <div className="tweet-editor">
+        <section className="tweet-editor">
             {children}
-        </div>
+        </section>
      );
 }
 
