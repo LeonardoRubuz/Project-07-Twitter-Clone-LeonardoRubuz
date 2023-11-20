@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Home() {
+function Home({children}) {
   return (
     <main className="timeline">
-      <h1>Timeline here</h1>
+      {children}
     </main>
   );
 }
