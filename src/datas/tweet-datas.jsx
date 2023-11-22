@@ -6,7 +6,7 @@ import twitter from "../images/twitter.png";
 export const datas = [
     {
         id  : 1 ,
-        avatar : {cnn},
+        avatar : cnn,
         author : "CNN",
         username : "CNN",
         date : "2m",
@@ -15,16 +15,16 @@ export const datas = [
     },
     {
         id  : 2 ,
-        avatar : {times},
+        avatar : times,
         author : "The New York Times",
         username : "nytimes",
         date : "2h",
         content : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-        image : {image},
+        image : image,
     },
     {
         id  : 3 ,
-        avatar : {twitter},
+        avatar : twitter,
         author : "Twitter",
         username : "Twitter",
         date : "Oct 29",
@@ -33,7 +33,7 @@ export const datas = [
     },
     {
         id  : 4 ,
-        avatar : {twitter},
+        avatar : twitter,
         author : "Twitter",
         username : "Twitter",
         date : "Oct 4",
@@ -42,11 +42,11 @@ export const datas = [
     },
     {
         id  : 5 ,
-        avatar : {twitter},
+        avatar : twitter,
         author : "Twitter",
         username : "Twitter",
         date : "Oct 4",
         content : "hello literally everyone",
-        image : {image},
+        image : image,
     }
 ]
