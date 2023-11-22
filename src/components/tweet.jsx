@@ -1,5 +1,11 @@
 import profile from '../images/tweet-profile-photo.png';
 import image from '../images/tweet-image.png';
+import comment from "../comment.svg";
+import like from "../like.svg";
+import retweet from "../retweet.svg";
+import share from "../share.svg";
+
+
 function Tweet() {
     return ( 
         <div className='tweet'>
@@ -19,7 +25,12 @@ function Tweet() {
                         <img src={image} alt="" />
                     </div>
                 </div>
-                <div className="tweet-actions"></div>
+                <div className="tweet-actions">
+                    <span className="tweet-action"><img src={comment} alt="" />10</span>
+                    <span className="tweet-action"><img src={retweet} alt="" />10</span>
+                    <span className="tweet-action"><img src={like} alt="" />10</span>
+                    <span className="tweet-action"><img src={share} alt="" /></span>
+                </div>
             </div>
         </div>
      );
