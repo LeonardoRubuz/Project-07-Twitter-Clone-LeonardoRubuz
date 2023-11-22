@@ -1,7 +1,22 @@
-function Tweets({children}) {
+import { datas } from "../datas/tweet-datas.jsx";
+import Tweet from "./tweet.jsx";
+
+function Tweets() {
+    const listTweets = datas.map(tweet => 
+        <Tweet
+            id={tweet.id}
+            avatar={tweet.avatar}
+            author={tweet.author}
+            username={tweet.username}
+            date={tweet.date}
+            content={tweet.content}
+            image={tweet.image}
+        />
+        )
+
     return ( 
         <section className="tweets">
-            {children}
+            {listTweets}
         </section>
      );
 }

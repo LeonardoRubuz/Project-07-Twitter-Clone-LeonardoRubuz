@@ -3,7 +3,7 @@ import image from '../images/tweet-image.png';
 import times from "../images/ny-times.png";
 import twitter from "../images/twitter.png";
 
-const datas = [
+export const datas = [
     {
         id  : 1 ,
         avatar : {cnn},
