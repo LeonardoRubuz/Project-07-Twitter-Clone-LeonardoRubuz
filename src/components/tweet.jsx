@@ -1,7 +1,7 @@
-import comment from "../comment.svg";
-import like from "../like.svg";
-import retweet from "../retweet.svg";
-import share from "../share.svg";
+import comment from "../../public/svg/comment.svg";
+import like from "../../public/svg/like.svg";
+import retweet from "../../public/svg/retweet.svg";
+import share from "../../public/svg/share.svg";
 
 
 function Tweet({ id,  avatar, author, username, date, content, image }) {
