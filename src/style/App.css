@@ -193,3 +193,70 @@ body{
     justify-content: center;
     gap: 20px;
 }
+
+/* Sidebar  */
+.sidebar{
+    font-family : 'Inter', sans-serif;
+    display : flex;
+    flex-direction : column;
+    position: sticky;
+    height:100%;
+}
+
+.side-navigation{
+    list-style : None;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.side-navigation button{
+    margin-top: 25px;
+}
+
+.navigation-item{
+    display : flex;
+    gap : 10px;
+    padding: 7px 10px;
+}
+
+.navigation-item:hover{
+    background-color : #202327;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+.user-info{
+    display:flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 7px 10px;
+}
+
+.profile-picture {
+    flex: 0 0 40px;
+    /*padding: 0 rem;*/
+}
+
+.profile-picture img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 100%;
+}
+
+.more-info{
+    margin-left : 50px;
+}
+
+.user-info:hover {
+    background-color : #202327;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.button:hover{
+    background-color: #1D9BF080;
+    cursor: pointer;
+}
