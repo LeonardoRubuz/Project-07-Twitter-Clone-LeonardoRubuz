@@ -1,8 +1,7 @@
 import searchIcon from "../../public/svg/search.svg";
-import settingsIcon from "../../public/svg/Settings.svg";
 import Trend from "./trend";
 import AccountFollow from "./account-follow";
-import ShowMore from "./showMore";
+import TrendingList from "./trending-list";
 
 function Trends() {
     return ( 
@@ -11,25 +10,17 @@ function Trends() {
                 <img src={searchIcon} alt="search icon" />
                 <input className="searchInput" type="text" placeholder="Search Twitter" />
             </div>
-            <div className="trending-list">
-                <div className="trend-title">
-                    <h3>Trends for you</h3>
-                    <div><img src={settingsIcon} alt="" /></div>
-                </div>
-                <ul className="trends-list">
-                    <Trend />
-                    <Trend />
-                    <Trend />
-                    <Trend />
-                </ul>
-                <ShowMore />
-            </div>
-            <div className="follow-list">
+            <TrendingList title='Trends for you'>
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+            </TrendingList>
+            <TrendingList title='Who to follow'>
                 <AccountFollow />
                 <AccountFollow />
                 <AccountFollow />
-                <ShowMore />
-            </div>
+            </TrendingList>
             <div className="trends-footer"></div>
         </>
      );

@@ -282,6 +282,7 @@ body{
 }
 
 .search-box img{
+    filter : hue-rotate(208deg) saturate(6%) brightness(46%);
     width: 7%;
 }
 
@@ -343,4 +344,10 @@ body{
 }
 .view-more-link:hover{
     cursor: pointer;
+}
+
+.follow-list{
+    display:flex;
+    flex-direction : column;
+    gap:10px;
 }
