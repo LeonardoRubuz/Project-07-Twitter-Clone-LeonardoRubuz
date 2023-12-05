@@ -266,6 +266,10 @@ body{
 
 .trends{
     margin-top:5px;
+    font-family : 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .search-box{
@@ -290,5 +294,53 @@ body{
 }
 
 .trending-list{
-    
+    background-color: #202327;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    padding: 15px;
+}
+
+
+.trend-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend-title div img{
+    width: 75%;
+}
+
+.trends-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.trend-location{
+    display: flex;
+    justify-content: space-between;
+}
+.trend-location span{
+    color : #6E767D;
+    font-size: 0.75em;
+}
+.trend-location img{
+    filter : hue-rotate(208deg) saturate(6%) brightness(46%);
+    width: 75%;
+}
+
+.hashtag-tweets{
+    color : #6E767D;
+    font-size: 0.75em;
+}
+
+.view-more-link{
+    color: #1D9BF0;
+    font-size: 0.80em;
+}
+.view-more-link:hover{
+    cursor: pointer;
 }
