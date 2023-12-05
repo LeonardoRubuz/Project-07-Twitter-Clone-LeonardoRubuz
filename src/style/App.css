@@ -196,6 +196,7 @@ body{
 
 /* Sidebar  */
 .sidebar{
+    margin-top:5px;
     font-family : 'Inter', sans-serif;
     display : flex;
     flex-direction : column;
@@ -259,4 +260,31 @@ body{
 .button:hover{
     background-color: #1D9BF080;
     cursor: pointer;
+}
+
+/* Trends */
+
+.trends{
+    margin-top:5px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    background-color:#202327;
+    padding: 7px;
+    border-radius:50px;
+}
+
+.search-box img{
+    width: 7%;
+}
+
+.searchInput{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #6E767D;
 }

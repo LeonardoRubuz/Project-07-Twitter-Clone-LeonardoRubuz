@@ -9,7 +9,7 @@ function Trends() {
         <>
             <div className="search-box">
                 <img src={searchIcon} alt="search icon" />
-                <input type="text" placeholder="Search Twitter" />
+                <input className="searchInput" type="text" placeholder="Search Twitter" />
             </div>
             <div className="trending-list">
                 <div className="trend-title">
