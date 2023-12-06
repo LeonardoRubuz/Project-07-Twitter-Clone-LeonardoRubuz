@@ -194,6 +194,10 @@ body{
     gap: 20px;
 }
 
+.tweet-action img{
+    filter : hue-rotate(208deg) saturate(6%) brightness(46%);
+}
+
 /* Sidebar  */
 .sidebar{
     margin-top:5px;

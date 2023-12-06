@@ -1,4 +1,4 @@
-import logo from "../images/twitter.png";
+import logo from "../../public/svg/Twitter.svg";
 import bookmark from "../../public/svg/Bookmarks.svg";
 import explore from "../../public/svg/Explore.svg";
 import home from "../../public/svg/Home-Fill.svg";
@@ -13,7 +13,7 @@ import more2 from "../../public/svg/More-2.svg";
 function Sidebar() {
     return ( 
         <>
-        <div className="avatar">
+        <div className="navigation-item">
             <img src={logo} alt="" />
         </div>
         <ul className="side-navigation">
