@@ -6,10 +6,10 @@ import share from "../../public/svg/share.svg";
 function TweetActions({comments, likes, retweets }) {
     return ( 
         <div className="tweet-actions">
-            <span className="tweet-action comment-action"><img src={comment} alt=""/>{comments}</span>
-            <span className="tweet-action retweet-action"><img src={retweet} alt="" />{retweets}</span>
-            <span className="tweet-action like-action"><img src={like} alt="" />{likes}</span>
-            <span className="tweet-action comment-action"><img src={share} alt="" /></span>
+            <span className="tweet-action comment-action" title="Comments"><img src={comment} alt=""/>{comments}</span>
+            <span className="tweet-action retweet-action" title="Retweets" ><img src={retweet} alt=""/>{retweets}</span>
+            <span className="tweet-action like-action" title="Likes" ><img src={like} alt=""/>{likes}</span>
+            <span className="tweet-action comment-action" title="Share"><img src={share} alt="" /></span>
         </div>
          );
 }

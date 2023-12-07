@@ -15,10 +15,7 @@ export default function App() {
     <Layout>
       <Home>
         <Header isOrder={true}/>
-        <TweetEditor>
-          <Avatar />
-          <InnerEditor />
-        </TweetEditor>
+        <Profile />
         <Tweets />
       </Home>
     </Layout>

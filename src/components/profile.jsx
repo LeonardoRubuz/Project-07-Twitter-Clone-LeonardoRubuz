@@ -1,3 +1,8 @@
+import banner from "../images/cnnBanner.jpeg"
+import logo from "../images/tweet-profile-photo.png"
+import more from "../../public/svg/More.svg"
+
+
 function Profile() {
     return ( 
         <div className="profile">
@@ -6,14 +11,14 @@ function Profile() {
             </div>
             <div className="profile-photo-actions">
                 <div className="profile-photo">
-                    <img src="" alt="" />
+                    <img src={logo} alt="" />
                 </div>
                 <div className="profile-actions">
                     <div>
-                        <img src="" alt="" />
+                        <img src={more} alt="" />
                     </div>
                     <div>
-                        <button>Follow</button>
+                        <button className="follow-button">Follow</button>
                     </div>
                 </div>
             </div>
@@ -26,11 +31,11 @@ function Profile() {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, dolore!</p>
                     <div className="additional-infos">
                         <div>
-                            <img src="" alt="" />
+                            <img src='' alt="" />
                             <span>cnn.com</span>
                         </div>
                         <div>
-                            <img src="" alt="" />
+                            <img src='' alt="" />
                             <span>Joined Twitter since 2007</span>
                         </div>
                     </div>
@@ -42,23 +47,18 @@ function Profile() {
                         <ul>
                             <li>
                                 <p>Tweets</p>
-                                <div></div>
                             </li>
                             <li>
                                 <p>Answers</p>
-                                <div></div>
                             </li>
                             <li>
                                 <p>Highlighted Tweets</p>
-                                <div></div>
                             </li>
                             <li>
                                 <p>Medias</p>
-                                <div></div>
                             </li>
                             <li>
                                 <p>Likes</p>
-                                <div></div>
                             </li>
                         </ul>
                     </div>
