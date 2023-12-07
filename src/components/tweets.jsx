@@ -11,6 +11,9 @@ function Tweets() {
             date={tweet.date}
             content={tweet.content}
             image={tweet.image}
+            likes={tweet.likesNumber}
+            comments={tweet.commentsNumber}
+            retweets={tweet.retweetsNumber}
         />
         )
 

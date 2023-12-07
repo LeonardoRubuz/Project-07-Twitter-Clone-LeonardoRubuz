@@ -12,6 +12,9 @@ export const datas = [
         date : "2m",
         content : "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the US steel industry and combat the global climate crisis.",
         image : null,
+        likesNumber : 100,
+        commentsNumber: 58,
+        retweetsNumber: 20,
     },
     {
         id  : 2 ,
@@ -21,6 +24,9 @@ export const datas = [
         date : "2h",
         content : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
         image : image,
+        likesNumber : 5326,
+        commentsNumber: 807,
+        retweetsNumber: 1023,
     },
     {
         id  : 3 ,
@@ -30,6 +36,9 @@ export const datas = [
         date : "Oct 29",
         content : "BIG NEWS lol jk still Twitter",
         image : null,
+        likesNumber : 68,
+        commentsNumber: 9,
+        retweetsNumber: 6,
     },
     {
         id  : 4 ,
@@ -39,6 +48,9 @@ export const datas = [
         date : "Oct 4",
         content : "hello literally everyone",
         image : null,
+        likesNumber : 654,
+        commentsNumber: 78,
+        retweetsNumber: 63,
     },
     {
         id  : 5 ,
@@ -48,5 +60,8 @@ export const datas = [
         date : "Oct 4",
         content : "hello literally everyone",
         image : image,
+        likesNumber : 102251,
+        commentsNumber: 562,
+        retweetsNumber: 845,
     }
 ]

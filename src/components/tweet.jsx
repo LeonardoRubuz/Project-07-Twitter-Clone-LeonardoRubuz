@@ -4,7 +4,7 @@ import retweet from "../../public/svg/retweet.svg";
 import share from "../../public/svg/share.svg";
 
 
-function Tweet({ id,  avatar, author, username, date, content, image }) {
+function Tweet({ id,  avatar, author, username, date, content, image, likes, comments, retweets }) {
     return ( 
         <div className='tweet'key={id}>
             <div className="tweet-avatar">
@@ -27,9 +27,9 @@ function Tweet({ id,  avatar, author, username, date, content, image }) {
                     }
                 </div>
                 <div className="tweet-actions">
-                    <span className="tweet-action"><img src={comment} alt="" />10</span>
-                    <span className="tweet-action"><img src={retweet} alt="" />10</span>
-                    <span className="tweet-action"><img src={like} alt="" />10</span>
+                    <span className="tweet-action"><img src={comment} alt="" />{comments}</span>
+                    <span className="tweet-action"><img src={retweet} alt="" />{retweets}</span>
+                    <span className="tweet-action"><img src={like} alt="" />{likes}</span>
                     <span className="tweet-action"><img src={share} alt="" /></span>
                 </div>
             </div>
