@@ -1,0 +1,17 @@
+import comment from "../../public/svg/comment.svg";
+import like from "../../public/svg/like.svg";
+import retweet from "../../public/svg/retweet.svg";
+import share from "../../public/svg/share.svg";
+
+function TweetActions({comments, likes, retweets }) {
+    return ( 
+        <div className="tweet-actions">
+            <span className="tweet-action comment-action"><img src={comment} alt=""/>{comments}</span>
+            <span className="tweet-action retweet-action"><img src={retweet} alt="" />{retweets}</span>
+            <span className="tweet-action like-action"><img src={like} alt="" />{likes}</span>
+            <span className="tweet-action comment-action"><img src={share} alt="" /></span>
+        </div>
+         );
+}
+
+export default TweetActions;
