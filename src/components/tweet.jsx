@@ -27,10 +27,10 @@ function Tweet({ id,  avatar, author, username, date, content, image, likes, com
                     }
                 </div>
                 <div className="tweet-actions">
-                    <span className="tweet-action"><img src={comment} alt="" />{comments}</span>
-                    <span className="tweet-action"><img src={retweet} alt="" />{retweets}</span>
-                    <span className="tweet-action"><img src={like} alt="" />{likes}</span>
-                    <span className="tweet-action"><img src={share} alt="" /></span>
+                    <span className="tweet-action comment-action"><img src={comment} alt="" />{comments}</span>
+                    <span className="tweet-action retweet-action"><img src={retweet} alt="" />{retweets}</span>
+                    <span className="tweet-action like-action"><img src={like} alt="" />{likes}</span>
+                    <span className="tweet-action comment-action"><img src={share} alt="" /></span>
                 </div>
             </div>
         </div>
