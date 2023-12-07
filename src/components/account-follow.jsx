@@ -5,7 +5,7 @@ function AccountFollow() {
     return ( 
         
         <div className="account-info">
-            <div className="profile-picture">
+            <div className="account-picture">
                 <img src={avatar} alt="" />
             </div>
             <div className="user-ids">

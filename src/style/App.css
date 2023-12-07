@@ -200,7 +200,7 @@ body{
 
 /* Sidebar  */
 .sidebar{
-    margin-top:5px;
+    margin:5px 55px;
     font-family : 'Inter', sans-serif;
     display : flex;
     flex-direction : column;
@@ -269,7 +269,7 @@ body{
 /* Trends */
 
 .trends{
-    margin-top:5px;
+    margin:5px 55px;
     font-family : 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
@@ -321,7 +321,7 @@ body{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 20px;
 }
 
 .trend-location{
@@ -353,5 +353,45 @@ body{
 .follow-list{
     display:flex;
     flex-direction : column;
-    gap:10px;
+    gap:15px;
+}
+
+.account-info{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 7px;
+    align-items: center;
+}
+
+.follow-button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 7px 9px;
+    border-radius: 50px;
+}
+
+.account-picture{
+    flex: 0 0 40px;
+}
+.account-picture img{
+    display: block;
+    width: 100%;
+}
+
+.trends-footer{
+    font-size: 0.8rem;
+    color : #6E767D;
+}
+.trends-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap : 10px;
+    list-style: none;
+}
+.trends-footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
