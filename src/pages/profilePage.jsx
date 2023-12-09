@@ -1,24 +1,17 @@
 import React from 'react';
 import Sidebar from '../components/sidebar';
 import Trends from '../components/trends';
-import Avatar from '../components/avatar';
-import Header from '../components/header';
-import TweetEditor from '../components/tweet-editor';
-import InnerEditor from '../components/inner-tweet-editor';
+import Profile from '../components/profile';
 import Tweets from '../components/tweets';
 
-function Home() {
+function ProfilePage() {
   return (
     <>
       <div className="sidebar">
         <Sidebar />
       </div>
     <main className="timeline">
-      <Header isOrder={true} />
-      <TweetEditor>
-        <Avatar />
-        <InnerEditor />
-      </TweetEditor>
+      <Profile />
       <Tweets />
     </main>
     <div className="trends">
@@ -28,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ProfilePage;

@@ -316,7 +316,7 @@ body{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;   
+    gap: 2em;   
     padding: 15px;
 }
 
@@ -372,8 +372,14 @@ body{
 .account-info{
     display:flex;
     justify-content: space-between;
-    gap: 7px;
+    gap: 2px;
     align-items: center;
+}
+
+.account-info div:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.1em;
 }
 
 .follow-button{
