@@ -1,6 +1,5 @@
 import Home from "./pages/home.jsx";
 import Layout from "./components/layout.jsx";
-import Profile from "./components/profile.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProfilePage from "./pages/profilePage.jsx";
 
@@ -17,7 +16,7 @@ export default function App() {
               element={<Home />} 
             />
             <Route
-              path="profile"
+              path="/profile"
               element={<ProfilePage />} 
             />
           </Routes>

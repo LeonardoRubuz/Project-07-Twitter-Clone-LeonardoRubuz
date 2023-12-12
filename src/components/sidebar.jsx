@@ -9,6 +9,7 @@ import notifications from "../../public/svg/Notifications.svg";
 import profile from "../../public/svg/Profile.svg";
 import avatar from "../images/profile-photo.png";
 import more2 from "../../public/svg/More-2.svg";
+import { Link} from "react-router-dom";
 
 function Sidebar() {
     return ( 
@@ -19,7 +20,9 @@ function Sidebar() {
         <ul className="side-navigation">
             <li className="navigation-item">
                 <img src={home} alt="" />
-                <span>Home</span>
+                    <Link to="/">
+                        Home
+                    </Link>
             </li>
             <li className="navigation-item">
                 <img src={explore} alt="" />
@@ -41,10 +44,12 @@ function Sidebar() {
                 <img src={lists} alt="" />
                 <span>Lists</span>
             </li>
-            <li className="navigation-item">
-                <img src={profile} alt="" />
-                <span>Profile</span>
-            </li>
+            <Link to="profile">
+                <li className="navigation-item">
+                    <img src={profile} alt="" />
+                    <span>Profile</span>
+                </li>
+            </Link>
             <li className="navigation-item">
                 <img src={more} alt="" />
                 <span>Plus</span>
