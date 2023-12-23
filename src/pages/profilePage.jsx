@@ -7,16 +7,8 @@ import Tweets from '../components/tweets';
 function ProfilePage() {
   return (
     <>
-      <div className="sidebar">
-        <Sidebar />
-      </div>
-    <main className="timeline">
       <Profile />
       <Tweets />
-    </main>
-    <div className="trends">
-      <Trends />
-    </div>
     </>
   );
 }

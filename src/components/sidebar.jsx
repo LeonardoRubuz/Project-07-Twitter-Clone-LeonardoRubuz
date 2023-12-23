@@ -9,20 +9,17 @@ import notifications from "../../public/svg/Notifications.svg";
 import profile from "../../public/svg/Profile.svg";
 import avatar from "../images/profile-photo.png";
 import more2 from "../../public/svg/More-2.svg";
-import { Link} from "react-router-dom";
 
 function Sidebar() {
     return ( 
-        <>
+        <div className="sidebar">
         <div className="navigation-item">
             <img src={logo} alt="" />
         </div>
         <ul className="side-navigation">
             <li className="navigation-item">
                 <img src={home} alt="" />
-                    <Link to="/">
-                        Home
-                    </Link>
+                <span>Home</span>
             </li>
             <li className="navigation-item">
                 <img src={explore} alt="" />
@@ -44,12 +41,10 @@ function Sidebar() {
                 <img src={lists} alt="" />
                 <span>Lists</span>
             </li>
-            <Link to="profile">
                 <li className="navigation-item">
                     <img src={profile} alt="" />
                     <span>Profile</span>
                 </li>
-            </Link>
             <li className="navigation-item">
                 <img src={more} alt="" />
                 <span>Plus</span>
@@ -68,7 +63,7 @@ function Sidebar() {
                 <img src={more2} alt="" />
             </div>
         </div>
-        </>
+        </div>
      );
 }
 

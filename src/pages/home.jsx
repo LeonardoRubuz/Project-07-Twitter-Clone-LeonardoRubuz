@@ -10,20 +10,12 @@ import Tweets from '../components/tweets';
 function Home() {
   return (
     <>
-      <div className="sidebar">
-        <Sidebar />
-      </div>
-    <main className="timeline">
       <Header isOrder={true} />
       <TweetEditor>
         <Avatar />
         <InnerEditor />
       </TweetEditor>
       <Tweets />
-    </main>
-    <div className="trends">
-      <Trends />
-    </div>
     </>
   );
 }

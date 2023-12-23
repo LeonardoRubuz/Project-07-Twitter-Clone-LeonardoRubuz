@@ -5,7 +5,7 @@ import TrendingList from "./trending-list";
 
 function Trends() {
     return ( 
-        <>
+        <div className="trends">
             <div className="search-box">
                 <img src={searchIcon} alt="search icon" />
                 <input className="searchInput" type="text" placeholder="Search Twitter" />
@@ -32,7 +32,7 @@ function Trends() {
                     <li>2021 Twitter, Inc</li>
                 </ul>
             </div>
-        </>
+        </div>
      );
 }
 
