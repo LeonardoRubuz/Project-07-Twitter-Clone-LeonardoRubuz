@@ -1,9 +1,9 @@
-import banner from "../images/cnnBanner.jpeg"
 import logo from "../images/tweet-profile-photo.png"
 import more from "../../public/svg/More.svg"
+import { usersProfiles } from "../datas/profiles";
 
-
-function Profile() {
+function Profile({profile}) {
+    const userProfile = usersProfiles.find(element => element.username === profile)
     return ( 
         <div className="profile">
             <div className="profile-banner">
@@ -24,11 +24,11 @@ function Profile() {
             </div>
             <div className="profile-infos">
                 <div className="usernames">
-                    <h1>CNN</h1>
-                    <p>@CNN</p>
+                    <h1>{userProfile.accountName}</h1>
+                    <p>@{userProfile.username}</p>
                 </div>
                 <div className="profile-bio">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, dolore!</p>
+                    <p>{userProfile.bio}</p>
                     <div className="additional-infos">
                         <div>
                             <img src='' alt="" />
@@ -36,12 +36,12 @@ function Profile() {
                         </div>
                         <div>
                             <img src='' alt="" />
-                            <span>Joined Twitter since 2007</span>
+                            <span>Joined Twitter since {userProfile.join_date}</span>
                         </div>
                     </div>
                     <div className="followers">
-                        <p><span>1086</span> following</p>
-                        <p><span>6M</span> followers</p>
+                        <p><span>{userProfile.following}</span> following</p>
+                        <p><span>{userProfile.followers}</span> followers</p>
                     </div>
                     <div className="profile-nav">
                         <ul>

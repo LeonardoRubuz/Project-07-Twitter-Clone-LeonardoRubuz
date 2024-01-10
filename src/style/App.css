@@ -244,6 +244,16 @@ body{
     background-color : #202327;
     cursor: pointer;
 }
+.navigation-item a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.navigation-item a:link{
+    color : white;
+}
+.navigation-item a:visited{
+    color : white;
+}
 
 
 .user-info{
@@ -252,6 +262,11 @@ body{
     justify-content: space-evenly;
     align-items:center;
     padding: 7px 10px;
+}
+
+.user-info a{
+    text-decoration: none;
+    color: white;
 }
 
 .profile-picture {
@@ -484,7 +499,7 @@ body{
     gap: 40px;
     color:#6E767D;
 }
-.followers span{
+.followers span{    
     color: white;
 }
 
@@ -505,7 +520,14 @@ body{
 }
 
 .profile-nav li div{
-    text-align: ;
+    /* text-align: ; */
     background-color: #1D9BF0;
     height: 10%;
+}
+
+
+/* Custom CSS */
+.tweet-title a{
+    text-decoration: none;
+    color: inherit;
 }

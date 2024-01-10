@@ -1,13 +1,13 @@
 import React from 'react';
-import Sidebar from '../components/sidebar';
-import Trends from '../components/trends';
 import Profile from '../components/profile';
 import Tweets from '../components/tweets';
+import { useParams } from 'react-router-dom';
 
 function ProfilePage() {
+  const userProfile = useParams()
   return (
     <>
-      <Profile />
+      <Profile profile={userProfile.username}/>
       <Tweets />
     </>
   );

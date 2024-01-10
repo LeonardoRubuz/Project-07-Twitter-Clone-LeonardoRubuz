@@ -12,7 +12,7 @@ function Home() {
     <>
       <Header isOrder={true} />
       <TweetEditor>
-        <Avatar />
+        <Avatar profileLink="/profile" />
         <InnerEditor />
       </TweetEditor>
       <Tweets />

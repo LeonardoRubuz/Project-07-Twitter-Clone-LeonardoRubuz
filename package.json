@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clsx": "^2.1.0",
     "react-icons": "^4.12.0",
     "react-javascript": "file:",
     "react-router-dom": "^6.20.1"
