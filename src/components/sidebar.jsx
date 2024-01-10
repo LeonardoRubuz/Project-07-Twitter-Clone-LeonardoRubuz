@@ -15,7 +15,7 @@ function Sidebar() {
     return ( 
         <div className="sidebar">
             <div className="navigation-item">
-                <img src={logo} alt="" />
+                <Link to={"/"}><img src={logo} alt="" /></Link>
             </div>
             <ul className="side-navigation">
                 <li className="navigation-item">
