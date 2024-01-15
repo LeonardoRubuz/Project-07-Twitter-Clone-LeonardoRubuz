@@ -1,9 +1,13 @@
 {
-    "current-user" : {},
+    "current-user" : {
+        "username" : "rbmachine",
+        "accountName" : "Leonardo",
+        "isLogged" : true 
+    },
     "tweets" : [
         {
             "id"  : 1 ,
-            "avatar" : cnn,
+            "avatar" : "cnn",
             "author" : "CNN",
             "username" : "CNN",
             "date" : "2m",
@@ -11,19 +15,19 @@
             "image" : null,
             "likesNumber" : 100,
             "commentsNumber": 58,
-            "retweetsNumber": 20,
+            "retweetsNumber": 20
         },
         {
             "id"  : 2 ,
-            "avatar" : times,
+            "avatar" : "times",
             "author" : "The New York Times",
             "username" : "nytimes",
             "date" : "2h",
             "content" : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-            "image" : image,
+            "image" : "image",
             "likesNumber" : 5326,
             "commentsNumber": 807,
-            "retweetsNumber": 1023,
+            "retweetsNumber": 1023
         },
         {
             "id"  : 3 ,
@@ -35,7 +39,7 @@
             "image" : null,
             "likesNumber" : 68,
             "commentsNumber": 9,
-            "retweetsNumber": 6,
+            "retweetsNumber": 6
         },
         {
             "id"  : 4 ,
@@ -47,7 +51,7 @@
             "image" : null,
             "likesNumber" : 654,
             "commentsNumber": 78,
-            "retweetsNumber": 63,
+            "retweetsNumber": 63
         },
         {
             "id"  : 5 ,
@@ -56,10 +60,10 @@
             "username" : "Twitter",
             "date" : "Oct 4",
             "content" : "hello literally everyone",
-            "image" : image,
+            "image" : "image",
             "likesNumber" : 102251,
             "commentsNumber": 562,
-            "retweetsNumber": 845,
+            "retweetsNumber": 845
         }
     ]
 }

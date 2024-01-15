@@ -10,8 +10,11 @@ import profile from "../../public/svg/Profile.svg";
 import avatar from "../images/profile-photo.png";
 import more2 from "../../public/svg/More-2.svg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../contexts/UserContext";
 
 function Sidebar() {
+    const user = useContext(UserContext)
     return ( 
         <div className="sidebar">
             <div className="navigation-item">
@@ -44,7 +47,7 @@ function Sidebar() {
                 </li>
                 <li className="navigation-item">
                         <img src={profile} alt="" />
-                        <Link to={`/rbmachine`}>Profile</Link>
+                        <Link to={`/${user.username}`}>Profile</Link>
                 </li>
                 <li className="navigation-item">
                     <img src={more} alt="" />
@@ -54,11 +57,11 @@ function Sidebar() {
             </ul>
             <div className="user-info">
                 <div className="profile-picture">
-                    <Link to={`/rbmachine`}><img src={avatar} alt="" /></Link>
+                    <Link to={`/${user.username}`}><img src={avatar} alt="" /></Link>
                 </div>
                 <div className="user-ids">
-                    <h2 className="tweet-title-author"><Link to={`/rbmachine`}>Leonardo</Link></h2>
-                    <p className="tweet-title-details"><Link to={`/rbmachine`}>@rbmachine</Link></p>
+                    <h2 className="tweet-title-author"><Link to={`/${user.username}`}>Leonardo</Link></h2>
+                    <p className="tweet-title-details"><Link to={`/${user.username}`}>@rbmachine</Link></p>
                 </div>
                 <div className="more-info">
                     <img src={more2} alt="" />
