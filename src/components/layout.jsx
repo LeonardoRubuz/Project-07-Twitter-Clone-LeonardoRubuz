@@ -11,8 +11,8 @@ function Layout() {
             <main className="timeline">
                 <Outlet />
             </main>
-            <Trends />
             <div className="right-sidebar" />
+            <Trends />
         </>
     );
 }

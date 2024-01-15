@@ -30,10 +30,14 @@ function Profile({profile}) {
                 <div className="profile-bio">
                     <p>{userProfile.bio}</p>
                     <div className="additional-infos">
-                        <div>
-                            <img src='' alt="" />
-                            <span>cnn.com</span>
-                        </div>
+                        {
+                            userProfile.links.website !== "" ?
+                            <div>
+                                <img src='' alt="" />
+                                <span><a href={"http://"+userProfile.links.website} target="_blank">{userProfile.links.website}</a></span>
+                            </div> :
+                            null
+                        }
                         <div>
                             <img src='' alt="" />
                             <span>Joined Twitter since {userProfile.join_date}</span>

@@ -1,4 +1,7 @@
-
+import cnn from "../images/tweet-profile-photo.png"
+import image from '../images/tweet-image.png';
+import times from "../images/ny-times.png";
+import twitter from "../images/twitter.png";
 
 export const usersProfiles = [
     {

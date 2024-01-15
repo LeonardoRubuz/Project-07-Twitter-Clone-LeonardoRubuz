@@ -1,26 +1,30 @@
+import { useContext } from "react";
 import comment from "../../public/svg/comment.svg";
 import like from "../../public/svg/like.svg";
 import retweet from "../../public/svg/retweet.svg";
 import share from "../../public/svg/share.svg";
 import TweetAction from "./tweetAction";
+import { TweetContext } from "../contexts/TweetContext";
 
-function TweetActions({comments, likes, retweets }) {
+function TweetActions() {
+    const tweet = useContext(TweetContext)
     return ( 
         <div className="tweet-actions">
+            <span className="tweet-action comment-action"title="Comments">
+                <img src={comment} alt="" />
+                {tweet.commentsNumber}
+            </span>
             <TweetAction
-               action={comments}
-               icon={comment}
-               extraClass='comment-action' 
-            />
-            <TweetAction
-               action={likes}
+               action={tweet.likesNumber}
                icon={like}
-               extraClass='like-action' 
+               extraClass='like-action'
+               title="Likes" 
             />
             <TweetAction
-               action={retweets}
+               action={tweet.retweetsNumber}
                icon={retweet}
-               extraClass='retweet-action' 
+               extraClass='retweet-action'
+               title="Retweets" 
             />
             <span className="tweet-action comment-action" title="Share">
                 <img src={share} alt="" />

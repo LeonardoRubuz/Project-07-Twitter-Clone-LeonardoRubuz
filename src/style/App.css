@@ -232,6 +232,9 @@ body{
     flex-direction : column;
     height:100%;
     max-width: 500px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
 }
 
 .side-navigation{
@@ -311,10 +314,14 @@ body{
 
 .trends{
     margin:5px 55px;
+    height: 100%;
+    max-width: 500px;
     font-family : 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .search-box{
@@ -501,6 +508,12 @@ body{
 }
 
 .additional-infos div:first-child{
+    color : #1D9BF0;
+}
+.additional-infos div:first-child a{
+    text-decoration: none;
+}
+.additional-infos div:first-child a:visited{
     color : #1D9BF0;
 }
 
