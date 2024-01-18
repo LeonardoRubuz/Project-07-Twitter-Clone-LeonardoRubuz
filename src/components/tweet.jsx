@@ -5,6 +5,8 @@ import { TweetContext } from "../contexts/TweetContext";
 
 function Tweet() {
     const tweet = useContext(TweetContext)
+    // const [isLiked, setIsLiked] = useState(tweet.isLiked);
+    // const [isRetweeted, setIsRetweeted] = useState(tweet.isLiked);
     return ( 
         <div className='tweet'key={tweet.id}>
             <div className="tweet-avatar">

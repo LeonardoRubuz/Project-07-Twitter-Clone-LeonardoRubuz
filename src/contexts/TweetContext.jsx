@@ -11,7 +11,9 @@ export const TweetContext = createContext(
         image : "",
         likesNumber : 0,
         commentsNumber : 0,
-        retweetsNumber : 0
+        retweetsNumber : 0,
+        isLiked : false,
+        isRetweeted : false
 
     }
 )

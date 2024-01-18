@@ -15,6 +15,8 @@ export const datas = [
         likesNumber : 100,
         commentsNumber: 58,
         retweetsNumber: 20,
+        isLiked : false,
+        isRetweeted : false
     },
     {
         id  : 2 ,
@@ -27,41 +29,49 @@ export const datas = [
         likesNumber : 5326,
         commentsNumber: 807,
         retweetsNumber: 1023,
+        isLiked : false,
+        isRetweeted : false
     },
     {
         id  : 3 ,
         avatar : twitter,
         author : "Twitter",
-        username : "Twitter",
+        username : "twitter",
         date : "Oct 29",
         content : "BIG NEWS lol jk still Twitter",
         image : null,
         likesNumber : 68,
         commentsNumber: 9,
         retweetsNumber: 6,
+        isLiked : false,
+        isRetweeted : false
     },
     {
         id  : 4 ,
         avatar : twitter,
         author : "Twitter",
-        username : "Twitter",
+        username : "twitter",
         date : "Oct 4",
         content : "hello literally everyone",
         image : null,
         likesNumber : 654,
         commentsNumber: 78,
         retweetsNumber: 63,
+        isLiked : false,
+        isRetweeted : false
     },
     {
         id  : 5 ,
         avatar : twitter,
         author : "Twitter",
-        username : "Twitter",
+        username : "twitter",
         date : "Oct 4",
         content : "hello literally everyone",
         image : image,
         likesNumber : 102251,
         commentsNumber: 562,
         retweetsNumber: 845,
+        isLiked : false,
+        isRetweeted : false
     }
 ]

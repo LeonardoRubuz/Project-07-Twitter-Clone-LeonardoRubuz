@@ -1,6 +1,4 @@
 import React from 'react';
-import Sidebar from '../components/sidebar';
-import Trends from '../components/trends';
 import Avatar from '../components/avatar';
 import Header from '../components/header';
 import TweetEditor from '../components/tweet-editor';
