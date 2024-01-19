@@ -2,12 +2,13 @@
     "current-user" : {
         "username" : "rbmachine",
         "accountName" : "Leonardo",
-        "isLogged" : true 
+        "isLogged" : true,
+        "avatar" :  "/images/profile-photo.png"
     },
     "tweets" : [
         {
             "id"  : 1 ,
-            "avatar" : "../images/tweet-profile-photo.png",
+            "avatar" : "/images/tweet-profile-photo.png",
             "author" : "CNN",
             "username" : "CNN",
             "date" : "2m",
@@ -19,7 +20,7 @@
         },
         {
             "id"  : 2 ,
-            "avatar" : "../images/ny-times.png",
+            "avatar" : "/images/ny-times.png",
             "author" : "The New York Times",
             "username" : "nytimes",
             "date" : "2h",
@@ -31,7 +32,7 @@
         },
         {
             "id"  : 3 ,
-            "avatar" : "../images/twitter.png",
+            "avatar" : "/images/twitter.png",
             "author" : "Twitter",
             "username" : "twitter",
             "date" : "Oct 29",
@@ -43,7 +44,7 @@
         },
         {
             "id"  : 4 ,
-            "avatar" : "../images/twitter.png",
+            "avatar" : "/images/twitter.png",
             "author" : "Twitter",
             "username" : "twitter",
             "date" : "Oct 4",
@@ -55,7 +56,7 @@
         },
         {
             "id"  : 5 ,
-            "avatar" : "../images/twitter.png",
+            "avatar" : "/images/twitter.png",
             "author" : "Twitter",
             "username" : "twitter",
             "date" : "Oct 4",

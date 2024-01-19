@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-import profilePhoto from "/images/profile-photo.png";
+import { useContext } from "react";
+import { UserContext } from "../contexts/UserContext";
 
 function Avatar({profileLink}) {
+    const userAvatar = useContext(UserContext)
     return ( 
         <div className="avatar">
             <Link to={profileLink}>    
-                <img src={profilePhoto} alt="" />
+                <img src={userAvatar.avatar} alt="" />
             </Link>
         </div>
      );
