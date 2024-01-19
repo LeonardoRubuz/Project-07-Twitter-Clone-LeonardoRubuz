@@ -7,7 +7,7 @@ import messages from "../../public/svg/Messages.svg";
 import more from "../../public/svg/More.svg";
 import notifications from "../../public/svg/Notifications.svg";
 import profile from "../../public/svg/Profile.svg";
-import avatar from "../images/profile-photo.png";
+import avatar from "/images/profile-photo.png";
 import more2 from "../../public/svg/More-2.svg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";

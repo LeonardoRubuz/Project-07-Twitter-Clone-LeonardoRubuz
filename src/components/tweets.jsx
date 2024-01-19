@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
 import { TweetContext } from "../contexts/TweetContext.jsx";
-import { datas } from "../datas/tweet-datas.jsx";
+//import datas from '../datas/initial-data.json'
 import Tweet from "./tweet.jsx";
+import { useContext } from "react";
+import { TweetsContext } from "../contexts/TweetsContext.jsx";
 
 function Tweets() {
     const user = useParams()
+    const datas = useContext(TweetsContext)
     let tweets = null
     if (user.username){
         const filteredDatas = datas.filter((data) => data.username == user.username)

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import profilePhoto from "../images/profile-photo.png";
+import profilePhoto from "/images/profile-photo.png";
 
 function Avatar({profileLink}) {
     return ( 

@@ -1,10 +1,11 @@
-import cnn from "../images/tweet-profile-photo.png"
-import image from '../images/tweet-image.png';
-import times from "../images/ny-times.png";
-import twitter from "../images/twitter.png";
+// import cnn from ""
+// import image from '../images/profile-photo.png';
+// import times from "../images/ny-times.png";
+// import twitter from "../images/twitter.png";
 
 export const usersProfiles = [
     {
+        //avatar : cnn,
         accountName :"CNN" ,
         username :"CNN" ,
         bio : "It's our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app.cnn.com/apps",
@@ -17,6 +18,7 @@ export const usersProfiles = [
         followers : 6000000
     },
     {
+        //avatar : times,
         accountName :"The New York Times" ,
         username :"nytimes" ,
         bio : "News tips? Share them here: http://nyti.ms/2FVHq9v",
@@ -29,6 +31,7 @@ export const usersProfiles = [
         followers : 55100000
     },
     {
+        //avatar : twitter,
         accountName :"Twitter" ,
         username :"twitter" ,
         bio : "what's happening!?",
@@ -41,6 +44,7 @@ export const usersProfiles = [
         followers : 6730000
     },
     {
+        //avatar : image,
         accountName :"Leonardo" ,
         username :"rbmachine" ,
         bio : "hey",

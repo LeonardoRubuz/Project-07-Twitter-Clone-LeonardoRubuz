@@ -7,7 +7,7 @@
     "tweets" : [
         {
             "id"  : 1 ,
-            "avatar" : "cnn",
+            "avatar" : "../images/tweet-profile-photo.png",
             "author" : "CNN",
             "username" : "CNN",
             "date" : "2m",
@@ -19,21 +19,21 @@
         },
         {
             "id"  : 2 ,
-            "avatar" : "times",
+            "avatar" : "../images/ny-times.png",
             "author" : "The New York Times",
             "username" : "nytimes",
             "date" : "2h",
             "content" : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-            "image" : "image",
+            "image" : "../images/tweet-image.png",
             "likesNumber" : 5326,
             "commentsNumber": 807,
             "retweetsNumber": 1023
         },
         {
             "id"  : 3 ,
-            "avatar" : "twitter",
+            "avatar" : "../images/twitter.png",
             "author" : "Twitter",
-            "username" : "Twitter",
+            "username" : "twitter",
             "date" : "Oct 29",
             "content" : "BIG NEWS lol jk still Twitter",
             "image" : null,
@@ -43,9 +43,9 @@
         },
         {
             "id"  : 4 ,
-            "avatar" : "twitter",
+            "avatar" : "../images/twitter.png",
             "author" : "Twitter",
-            "username" : "Twitter",
+            "username" : "twitter",
             "date" : "Oct 4",
             "content" : "hello literally everyone",
             "image" : null,
@@ -55,9 +55,9 @@
         },
         {
             "id"  : 5 ,
-            "avatar" : "twitter",
+            "avatar" : "../images/twitter.png",
             "author" : "Twitter",
-            "username" : "Twitter",
+            "username" : "twitter",
             "date" : "Oct 4",
             "content" : "hello literally everyone",
             "image" : "image",

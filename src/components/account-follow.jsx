@@ -1,5 +1,5 @@
 
-import avatar from "../images/profile-photo.png";
+import avatar from "/images/profile-photo.png";
 
 function AccountFollow() {
     return ( 

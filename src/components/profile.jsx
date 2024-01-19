@@ -1,4 +1,4 @@
-import logo from "../images/tweet-profile-photo.png"
+//import logo from "../images/tweet-profile-photo.png"
 import more from "../../public/svg/More.svg"
 import { usersProfiles } from "../datas/profiles";
 
@@ -11,7 +11,7 @@ function Profile({profile}) {
             </div>
             <div className="profile-photo-actions">
                 <div className="profile-photo">
-                    <img src={logo} alt="" />
+                    <img src={userProfile.avatar} alt="" />
                 </div>
                 <div className="profile-actions">
                     <div>

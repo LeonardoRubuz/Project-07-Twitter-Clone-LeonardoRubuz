@@ -7,7 +7,7 @@ import schedule from "../../public/svg/Schedule.svg";
 function InnerEditor() {
     return ( 
         <form action="" className="tweet-editor-form">
-            <input type="text" className="tweet-editor-input" placeholder="What's happening?" />
+            <input name="tweetInput" type="text" className="tweet-editor-input" placeholder="What's happening?" />
             <div className="tweet-editor-buttons">
                 <div className="tweet-editor-actions">
                     <button><img src={media} alt="" /></button>
@@ -16,7 +16,7 @@ function InnerEditor() {
                     <button><img src={emoji} alt="" /></button>
                     <button><img src={schedule} alt="" /></button>
                 </div>
-                <button className="button">Tweet</button>
+                <button className="button" type="submit">Tweet</button>
             </div>
         </form>
      );

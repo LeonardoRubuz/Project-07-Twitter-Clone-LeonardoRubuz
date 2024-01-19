@@ -468,6 +468,18 @@ body{
     justify-content: space-between;
 }
 
+.profile-photo{
+    /*height: 70px;*/
+    /*width: 70px;*/
+    flex: 0 0 70px;
+}
+.profile-photo img{
+    max-width: 180%;
+    max-height: 130px;
+    border-radius: 100%;
+}
+
+
 .profile-actions{
     display: flex;
     justify-content: space-between;
