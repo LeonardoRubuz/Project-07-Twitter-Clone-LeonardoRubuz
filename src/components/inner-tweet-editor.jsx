@@ -4,10 +4,14 @@ import gif from "../../public/svg/Gif.svg";
 import poll from "../../public/svg/Poll.svg";
 import schedule from "../../public/svg/Schedule.svg";
 
-function InnerEditor() {
+function InnerEditor({onTweetSubmit}) {
+    const [tweetInput, setTweetInput] = useState("");
     return ( 
         <form action="" className="tweet-editor-form">
-            <input name="tweetInput" type="text" className="tweet-editor-input" placeholder="What's happening?" />
+            <input name="tweetInput" type="text" className="tweet-editor-input" placeholder="What's happening?" value={tweetInput} 
+            onChange={
+                (e) => setTweetInput(e.target.value)
+            } />
             <div className="tweet-editor-buttons">
                 <div className="tweet-editor-actions">
                     <button><img src={media} alt="" /></button>
@@ -16,7 +20,9 @@ function InnerEditor() {
                     <button><img src={emoji} alt="" /></button>
                     <button><img src={schedule} alt="" /></button>
                 </div>
-                <button className="button" type="submit">Tweet</button>
+                <button className="button" type="submit" onClick={
+                    () => onTweetSubmit(tweetInput)
+                }>Tweet</button>
             </div>
         </form>
      );

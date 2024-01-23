@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { useState } from "react";
 import Layout from "./components/layout.jsx";
 import Home from "./pages/home.jsx";
 import ProfilePage from "./pages/profilePage.jsx";
@@ -30,9 +31,15 @@ const router = createBrowserRouter([
 
 export default function App() {
   const user = datas["current-user"]
+  const [tweets, setTweets] = useState(datas.tweets);
+
+  function addTweet(tweetInput) {
+    setTweets(tweets.push(tweetInput))
+  }
+
   return (
     <UserContext.Provider value={user}>
-      <TweetsContext.Provider value={datas.tweets}>  
+      <TweetsContext.Provider value={{ tweets, addTweet }}>  
         <RouterProvider router={router} />
       </TweetsContext.Provider>
     </UserContext.Provider>
