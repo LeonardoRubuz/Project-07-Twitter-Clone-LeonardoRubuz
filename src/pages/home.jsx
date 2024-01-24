@@ -9,15 +9,14 @@ import { TweetsContext } from '../contexts/TweetsContext';
 
 function Home() {
   const loggedUser = useContext(UserContext)
-  const {tweetsDatas, addTweet} = useContext(TweetsContext)
   return (
     <>
       <Header isOrder={true} />
       <TweetEditor>
         <Avatar profileLink = {`/${loggedUser.username}`} />
-        <InnerEditor onTweetSubmit={addTweet}/>
+        <InnerEditor/>
       </TweetEditor>
-      <Tweets datas={tweetsDatas}/>
+      <Tweets/>
     </>
   );
 }

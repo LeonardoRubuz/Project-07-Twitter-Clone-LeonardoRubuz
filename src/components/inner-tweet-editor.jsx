@@ -1,10 +1,11 @@
+import { useState } from "react";
 import media from "../../public/svg/Media.svg";
 import emoji from "../../public/svg/Emoji.svg";
 import gif from "../../public/svg/Gif.svg";
 import poll from "../../public/svg/Poll.svg";
 import schedule from "../../public/svg/Schedule.svg";
 
-function InnerEditor({onTweetSubmit}) {
+function InnerEditor() {
     const [tweetInput, setTweetInput] = useState("");
     return ( 
         <form action="" className="tweet-editor-form">
@@ -20,9 +21,7 @@ function InnerEditor({onTweetSubmit}) {
                     <button><img src={emoji} alt="" /></button>
                     <button><img src={schedule} alt="" /></button>
                 </div>
-                <button className="button" type="submit" onClick={
-                    () => onTweetSubmit(tweetInput)
-                }>Tweet</button>
+                <button className="button" type="submit">Tweet</button>
             </div>
         </form>
      );

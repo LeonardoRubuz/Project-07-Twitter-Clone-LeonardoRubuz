@@ -5,8 +5,9 @@ import Tweet from "./tweet.jsx";
 import { useContext } from "react";
 import { TweetsContext } from "../contexts/TweetsContext.jsx";
 
-function Tweets({datas}) {
+function Tweets() {
     const user = useParams()
+    const datas = useContext(TweetsContext)
     let tweets = null
     if (user.username){
         const filteredDatas = datas.filter((data) => data.username == user.username)

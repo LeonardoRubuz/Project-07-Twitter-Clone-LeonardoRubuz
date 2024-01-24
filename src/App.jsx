@@ -31,15 +31,10 @@ const router = createBrowserRouter([
 
 export default function App() {
   const user = datas["current-user"]
-  const [tweets, setTweets] = useState(datas.tweets);
-
-  function addTweet(tweetInput) {
-    setTweets(tweets.push(tweetInput))
-  }
 
   return (
     <UserContext.Provider value={user}>
-      <TweetsContext.Provider value={{ tweets, addTweet }}>  
+      <TweetsContext.Provider value={datas.tweets}>  
         <RouterProvider router={router} />
       </TweetsContext.Provider>
     </UserContext.Provider>
