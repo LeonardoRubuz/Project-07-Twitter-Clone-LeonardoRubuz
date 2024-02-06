@@ -5,7 +5,6 @@ import TweetEditor from '../components/tweet-editor';
 import InnerEditor from '../components/inner-tweet-editor';
 import Tweets from '../components/tweets';
 import { UserContext } from '../contexts/UserContext';
-import { TweetsContext } from '../contexts/TweetsContext';
 
 function Home() {
   const loggedUser = useContext(UserContext)
