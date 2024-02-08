@@ -6,4 +6,4 @@ export const UserContext = createContext(
         accountName : "",
         isLogged : true
     }
-)
+)   

@@ -3,10 +3,6 @@ import axios from "axios";
 // List of all API requests
 
 // Users
-const getAllProfiles = () => {
-    
-}
-
 const getCurrentUser = async () => {
     
     return await axios.get(`http://localhost:8000/current-user`)
@@ -39,8 +35,14 @@ const getTweetsByUser = async (username) => {
     })
 }
 
-const addTweet = () => {
-    
+const addTweet = (data) => {
+    axios.post("http://localhost:8000/tweets", data)
+    .then(response => {
+        console.log(`${response.status} Tweet enregistré!`);
+    })
+    .catch(error => {
+        console.log(error);
+    })
 }
 
-export { getAllProfiles, getCurrentUser, getAllTweets, getTweetsByUser, addTweet }
+export { getUserProfile, getCurrentUser, getAllTweets, getTweetsByUser, addTweet }

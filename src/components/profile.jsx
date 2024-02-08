@@ -2,7 +2,9 @@
 import more from "../../public/svg/More.svg"
 import { usersProfiles } from "../datas/profiles";
 
+
 function Profile({profile}) {
+
     const userProfile = usersProfiles.find(element => element.username === profile)
     return ( 
         <div className="profile">

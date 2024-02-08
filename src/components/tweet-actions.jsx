@@ -15,16 +15,16 @@ function TweetActions() {
                 {tweet.commentsNumber}
             </span>
             <TweetAction
-               action={tweet.likesNumber}
-               icon={like}
-               extraClass='like-action'
-               title="Likes" 
-            />
-            <TweetAction
                action={tweet.retweetsNumber}
                icon={retweet}
                extraClass='retweet-action'
                title="Retweets" 
+            />
+            <TweetAction
+               action={tweet.likesNumber}
+               icon={like}
+               extraClass='like-action'
+               title="Likes" 
             />
             <span className="tweet-action comment-action" title="Share">
                 <img src={share} alt="" />

@@ -8,7 +8,7 @@ function Tweet() {
     // const [isLiked, setIsLiked] = useState(tweet.isLiked);
     // const [isRetweeted, setIsRetweeted] = useState(tweet.isLiked);
     return ( 
-        <div className='tweet'key={tweet.id}>
+        <div className='tweet'>
             <div className="tweet-avatar">
             <Link to={`/${tweet.username}`}><img src={tweet.avatar} alt="" /></Link>
             </div>

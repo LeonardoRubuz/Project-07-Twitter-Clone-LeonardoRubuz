@@ -8,14 +8,14 @@ import { getTweetsByUser } from "../api/apiRequests.jsx";
 
 function Tweets() {
     const user = useParams()
-    const datas = useContext(TweetsContext)
+    const datas = useContext(TweetsContext).toReversed()
     const [filteredTweets, setFilteredTweets] = useState([]);
     let tweets = null
     if (user.username){
         useEffect(() => {
             async function fetchTweetsByUser() {
                 const tweetsList = await getTweetsByUser(user.username)
-                setFilteredTweets(tweetsList)
+                setFilteredTweets(tweetsList.toReversed())
             }
             fetchTweetsByUser()
         }, [])
@@ -23,10 +23,8 @@ function Tweets() {
         tweets = filteredTweets.map(
             (tweet, index) => {
                 return(
-                <TweetContext.Provider value={tweet}>    
-                    <Tweet
-                        key={index}
-                    />
+                <TweetContext.Provider value={tweet} key={index}>    
+                    <Tweet/>
                 </TweetContext.Provider>    
                 )
             }
@@ -36,10 +34,8 @@ function Tweets() {
         tweets = datas.map(
             (tweet, index) => {
                 return(
-                <TweetContext.Provider value={tweet}>    
-                    <Tweet
-                        key={index}
-                    />
+                <TweetContext.Provider value={tweet} key={index}>    
+                    <Tweet/>
                 </TweetContext.Provider>    
                 )
             }
