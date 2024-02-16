@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --port 5000",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "json" : "npx json-server src/datas/initial-data.json --port 8000"
   },
   "keywords": [],
   "author": "",

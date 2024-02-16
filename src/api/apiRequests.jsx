@@ -45,4 +45,4 @@ const addTweet = (data) => {
     })
 }
 
-export { getUserProfile, getCurrentUser, getAllTweets, getTweetsByUser, addTweet }
+export { getCurrentUser, getAllTweets, getTweetsByUser, addTweet }
