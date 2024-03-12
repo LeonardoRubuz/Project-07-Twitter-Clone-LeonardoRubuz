@@ -16,7 +16,7 @@ const getCurrentUser = async () => {
 
 // Tweets
 const getAllTweets = async () => {
-    return await axios.get(`http://localhost:8000/tweets`)
+    return await axios.get(`http://localhost:5500/tweets`)
     .then(response => {
         return response.data;
     })
