@@ -2,7 +2,6 @@ const express = require('express');
 const app = express()
 const cors = require('cors')
 const fs = require("fs")
-const test = require('./models/test.json')
 //routers
 const tweetRouter = require('./routes/tweets');
 const profileRouter = require('./routes/profiles');
@@ -14,31 +13,6 @@ app.get('/', (req, res) => {
     res.send("Twitter mini API")
 })
 
-app.post('/test', (req, res) => { 
-    fs.readFile('./models/test.json', err => {
-        if (err) {
-            console.log(err);
-        }else {
-            test.push(req.body)
-            fs.writeFile("./models/test.json", JSON.stringify(test, null, 2), err => {
-                if (err) {
-                    console.log("Erreur", err);
-                }else {
-                    console.log("Succès");
-                }
-            })
-        }
-    })
-    res.json(test)
-})
-app.get('/test', (req, res) => {
-    try{
-        const tests = JSON.parse(fs.readFileSync('./models/test.json'))
-        res.json(tests)
-    }catch(err){
-        console.log("Erreur", err);
-    }
-})
 
 app.use(tweetRouter)
 app.use("/profiles",profileRouter)
