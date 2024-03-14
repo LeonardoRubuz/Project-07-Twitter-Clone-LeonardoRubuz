@@ -36,7 +36,7 @@ const getTweetsByUser = async (username) => {
 }
 
 const addTweet = (data) => {
-    axios.post("http://localhost:8000/tweets", data)
+    axios.post("http://localhost:5500/tweets", data)
     .then(response => {
         console.log(`${response.status} Tweet enregistré!`);
     })
