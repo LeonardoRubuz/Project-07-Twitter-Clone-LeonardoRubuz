@@ -1,7 +1,7 @@
 const express = require('express')
-const fs = require('fs').promises
+const fs = require('fs')
 const tweetRouter = express.Router()
-const tweets = require('../models/tweets.json').tweets
+const tweets = require('../models/tweets.json')
 
 
 
@@ -16,12 +16,21 @@ tweetRouter
     res.json(filteredTweets) 
 })
 .post("/tweets", async (req, res) => {
-    // Ouvrir le fichier json
-    // Tranformer l'objet js en chaîne json
-    // Ecrire dans le fichier json
-    // Envoyer une réponse positive
-    console.log(req.body);
-    res.send(req.body)
+    fs.readFile('./models/tweets.json', err => {
+        if (err) {
+            console.log(err);
+        }else {
+            tweets.push(req.body)
+            fs.writeFile("./models/tweets.json", JSON.stringify(tweets, null, 2), err => {
+                if (err) {
+                    console.log("Erreur", err);
+                }else {
+                    console.log("Succès");
+                }
+            })
+        }
+    })
+    res.send('Enregistré')
 })
 
 module.exports = tweetRouter

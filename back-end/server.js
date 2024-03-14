@@ -13,10 +13,8 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.send("Twitter mini API")
 })
+
 app.post('/test', (req, res) => { 
-    /* test.users.push(req.body)
-    res.json(test) */
-    
     fs.readFile('./models/test.json', err => {
         if (err) {
             console.log(err);
