@@ -7,9 +7,13 @@ const tweets = require('../models/tweets.json')
 
 
 tweetRouter
-.get("/tweets", (req, res) => {
-    res.json(tweets)
-    
+.get("/tweets", async (req, res) => {
+    try{
+        const allTweets = await JSON.parse(fs.readFileSync('./models/tweets.json'))
+        res.json(allTweets)
+    }catch(err){
+        console.log("Erreur", err);
+    }
 })
 .get("/:username/tweets", (req, res) => {
     const filteredTweets = tweets.filter( tweet => tweet.username === req.params.username)

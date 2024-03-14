@@ -31,6 +31,14 @@ app.post('/test', (req, res) => {
     })
     res.json(test)
 })
+app.get('/test', (req, res) => {
+    try{
+        const tests = JSON.parse(fs.readFileSync('./models/test.json'))
+        res.json(tests)
+    }catch(err){
+        console.log("Erreur", err);
+    }
+})
 
 app.use(tweetRouter)
 app.use("/profiles",profileRouter)

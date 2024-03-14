@@ -124,5 +124,47 @@
     "retweetsNumber": 0,
     "isLiked": false,
     "isRetweeted": false
+  },
+  {
+    "id": 10,
+    "avatar": "/images/profile-photo.png",
+    "author": "Leonardo",
+    "username": "rbmachine",
+    "date": "Now",
+    "content": "New tweet",
+    "image": null,
+    "likesNumber": 0,
+    "commentsNumber": 0,
+    "retweetsNumber": 0,
+    "isLiked": false,
+    "isRetweeted": false
+  },
+  {
+    "id": 11,
+    "avatar": "/images/profile-photo.png",
+    "author": "Leonardo",
+    "username": "rbmachine",
+    "date": "Now",
+    "content": "encore un test",
+    "image": null,
+    "likesNumber": 0,
+    "commentsNumber": 0,
+    "retweetsNumber": 0,
+    "isLiked": false,
+    "isRetweeted": false
+  },
+  {
+    "id": 12,
+    "avatar": "/images/profile-photo.png",
+    "author": "Leonardo",
+    "username": "rbmachine",
+    "date": "Now",
+    "content": "Un autre test",
+    "image": null,
+    "likesNumber": 0,
+    "commentsNumber": 0,
+    "retweetsNumber": 0,
+    "isLiked": false,
+    "isRetweeted": false
   }
 ]
