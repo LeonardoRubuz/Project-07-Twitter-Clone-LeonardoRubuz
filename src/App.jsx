@@ -52,6 +52,7 @@ export default function App() {
     }
     fetchAllTweets()
   }, [])
+  
   return (
     <UserContext.Provider value={user}>
       <TweetsContext.Provider value={tweets}>  

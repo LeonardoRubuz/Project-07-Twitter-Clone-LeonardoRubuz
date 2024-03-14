@@ -166,5 +166,19 @@
     "retweetsNumber": 0,
     "isLiked": false,
     "isRetweeted": false
+  },
+  {
+    "id": 13,
+    "avatar": "/images/profile-photo.png",
+    "author": "Leonardo",
+    "username": "rbmachine",
+    "date": "Now",
+    "content": "un troisème test",
+    "image": null,
+    "likesNumber": 0,
+    "commentsNumber": 0,
+    "retweetsNumber": 0,
+    "isLiked": false,
+    "isRetweeted": false
   }
 ]
