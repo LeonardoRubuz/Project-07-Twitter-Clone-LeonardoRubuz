@@ -13,6 +13,7 @@ function InnerEditor() {
     const currentUser = useContext(UserContext)
     const tweetListLength = useContext(TweetsContext).length
     const { register, handleSubmit, formState : {errors} } = useForm()
+    
     function onFormSubmit(data, event) {
         // create a new tweet object
         const newTweet = {
@@ -34,6 +35,7 @@ function InnerEditor() {
         event.target.reset()
         event.preventDefault()
     };
+    
     return ( 
         <form action="" className="tweet-editor-form" onSubmit={handleSubmit(onFormSubmit)}>
             <input type="text" className="tweet-editor-input" placeholder="What's happening?" 

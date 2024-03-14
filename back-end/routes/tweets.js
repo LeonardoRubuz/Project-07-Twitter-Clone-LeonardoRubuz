@@ -7,9 +7,9 @@ const tweets = require('../models/tweets.json')
 
 
 tweetRouter
-.get("/tweets", async (req, res) => {
+.get("/tweets", (req, res) => {
     try{
-        const allTweets = await JSON.parse(fs.readFileSync('./models/tweets.json'))
+        const allTweets = JSON.parse(fs.readFileSync('./models/tweets.json'))
         res.json(allTweets)
     }catch(err){
         console.log("Erreur", err);
@@ -30,11 +30,14 @@ tweetRouter
                     console.log("Erreur", err);
                 }else {
                     console.log("Succès");
+                    res.json(
+                        JSON.parse(fs.readFileSync('./models/tweets.json'))
+                    )
                 }
             })
         }
     })
-    res.send('Enregistré')
+    
 })
 
 module.exports = tweetRouter
