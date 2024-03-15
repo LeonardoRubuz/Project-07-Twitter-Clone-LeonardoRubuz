@@ -5,7 +5,7 @@ import axios from "axios";
 // Users
 const getCurrentUser = async () => {
     
-    return await axios.get(`http://localhost:5500/user`)
+    return await axios.get(`https://twitter-clone-api-hy1e.onrender.com/user`)
     .then(response => {
         return response.data;
     })
@@ -16,7 +16,7 @@ const getCurrentUser = async () => {
 
 // Tweets
 const getAllTweets = async () => {
-    return await axios.get(`http://localhost:5500/tweets`)
+    return await axios.get(`https://twitter-clone-api-hy1e.onrender.com/tweets`)
     .then(response => {
         return response.data;
     })
@@ -26,7 +26,7 @@ const getAllTweets = async () => {
  }
 
 const getTweetsByUser = async (username) => {
-    return await axios.get(`http://localhost:5500/${username}/tweets`)
+    return await axios.get(`https://twitter-clone-api-hy1e.onrender.com/${username}/tweets`)
     .then(response => {
         return response.data;
     })
@@ -36,7 +36,7 @@ const getTweetsByUser = async (username) => {
 }
 
 const addTweet = (data) => {
-    axios.post("http://localhost:5500/tweets", data)
+    axios.post("https://twitter-clone-api-hy1e.onrender.com/tweets", data)
     .then(response => {
         console.log(`${response.status} Tweet enregistré!`);
     })
