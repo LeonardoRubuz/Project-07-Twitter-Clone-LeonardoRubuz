@@ -5,7 +5,7 @@ import axios from "axios";
 // Users
 const getCurrentUser = async () => {
     
-    return await axios.get(`http://localhost:8000/current-user`)
+    return await axios.get(`http://localhost:5500/user`)
     .then(response => {
         return response.data;
     })
