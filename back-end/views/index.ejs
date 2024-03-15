@@ -8,19 +8,18 @@
 </head>
 <body>
     <nav>
-        <h1>TWITTER CLONE API</h1>
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="">Introduction</a>
+                <a href="#introduction">Introduction</a>
             </li>
             <li class="nav-item">
-                <a href="">Base URL</a>
+                <a href="#base-url">Base URL</a>
             </li>
             <li class="nav-item">
-                <a href="">Authentification</a>
+                <a href="#auth">Authentification</a>
             </li>
             <li class="nav-item">
-                <a href="">Ressources</a>
+                <a href="#endpoints">Ressources</a>
             </li>
         </ul>
     </nav>
@@ -41,84 +40,167 @@
             <p>
                 Les requêtes peuvent être effectuées grâce à la commande  <code style="color: red;">curl</code>  de 
                 l'invite de commande (terminal) ou via tout autre utilitaire tierce permettant les appels REST (ex: Postman, Swagger, ...). <br>
-                Voici un exemple de profiles enregistrés : <br><br>
+                Voici un exemple d'appel : <br><br>
                 <code style="text-align: center;">
                     curl https://twitter-clone-api-hy1e.onrender.com/profiles
                 </code>
             </p>
-            <p>Appeler cette ressource renverra l'objet suivant :</p>
+            <p>Appeler cette ressource renverra la liste des profiles enregistrés sous la forme suivante :</p>
             <pre>
                 <code>
-                [
-                    {
-                        "image": "/images/tweet-profile-photo.png",
-                        "accountName": "CNN",
-                        "username": "CNN",
-                        "bio": "It's our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app.cnn.com/apps",
-                        "links": {
-                        "location": "",
-                        "website": "cnn.com"
+                    [
+                        {
+                            "image": "/images/tweet-profile-photo.png",
+                            "accountName": "CNN",
+                            "username": "CNN",
+                            "bio": "It's our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app.cnn.com/apps",
+                            "links": {
+                            "location": "",
+                            "website": "cnn.com"
+                            },
+                            "join_date": "2007",
+                            "following": 1086,
+                            "followers": 6000000,
+                            "id": "cbc1"
                         },
-                        "join_date": "2007",
-                        "following": 1086,
-                        "followers": 6000000,
-                        "id": "cbc1"
-                    },
-                    {
-                        "image": "/images/ny-times.png",
-                        "accountName": "The New York Times",
-                        "username": "nytimes",
-                        "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v",
-                        "links": {
-                        "location": "New York City, USA",
-                        "website": "nytimes.com"
+                        {
+                            "image": "/images/ny-times.png",
+                            "accountName": "The New York Times",
+                            "username": "nytimes",
+                            "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v",
+                            "links": {
+                            "location": "New York City, USA",
+                            "website": "nytimes.com"
+                            },
+                            "join_date": "2007",
+                            "following": 876,
+                            "followers": 55100000,
+                            "id": "37a9"
                         },
-                        "join_date": "2007",
-                        "following": 876,
-                        "followers": 55100000,
-                        "id": "37a9"
-                    },
-                    {
-                        "image": "/images/twitter.png",
-                        "accountName": "Twitter",
-                        "username": "twitter",
-                        "bio": "what's happening!?",
-                        "links": {
-                        "location": "everywhere",
-                        "website": "about.x.com"
+                        {
+                            "image": "/images/twitter.png",
+                            "accountName": "Twitter",
+                            "username": "twitter",
+                            "bio": "what's happening!?",
+                            "links": {
+                            "location": "everywhere",
+                            "website": "about.x.com"
+                            },
+                            "join_date": "2007",
+                            "following": 0,
+                            "followers": 6730000,
+                            "id": "dee3"
                         },
-                        "join_date": "2007",
-                        "following": 0,
-                        "followers": 6730000,
-                        "id": "dee3"
-                    },
-                    {
-                        "image": "/images/profile-photo.png",
-                        "accountName": "Leonardo",
-                        "username": "rbmachine",
-                        "bio": "hey",
-                        "links": {},
-                        "join_date": "2017",
-                        "following": 130,
-                        "followers": 27,
-                        "id": "0d5f"
-                    }
-                ]
+                        {
+                            "image": "/images/profile-photo.png",
+                            "accountName": "Leonardo",
+                            "username": "rbmachine",
+                            "bio": "hey",
+                            "links": {},
+                            "join_date": "2017",
+                            "following": 130,
+                            "followers": 27,
+                            "id": "0d5f"
+                        }
+                    ]                
                 </code>
             </pre>
 
         </section>
         <section id="base-url">
             <h2>URL de Base</h2>
-            <div></div>
+            <p>Toutes les URLs doivent être préfixées par :</p><br>
+            <code>https://twitter-clone-api-hy1e.onrender.com/</code>
         </section>
         <section id="auth">
             <h2>Authentification</h2>
-            <div></div>
+            <p>Aucune authentification n'est nécessaire pour l'utilisation de cette API</p>
         </section>
         <section id="endpoints">
             <h2>Ressources</h2>
-            <div></div>
+            <div>
+                <h4>Utilisateur courant</h4>
+                <div>
+                    <div class="req-method">
+                        <div class="req-badge get-meth">get</div>
+                        <span><code>/user</code></span>
+                    </div>
+                    <p>Retourne les informations de l'utilisateur principal.</p>
+                    <h5>Réponses</h5>
+                    <ul>
+                        <li>
+                            200 - OK
+                            <pre>
+                                <code>
+                                    {
+                                        "username": "Nom d'utilisateur",
+                                        "accountName": "Nom du compte",
+                                        "isLogged": "Statut de connexion",
+                                        "avatar": "Chemin d'accès vers l'avatar  de l'utilisateur"
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Profils d'utilisateurs</h4>
+                <div>
+                    <div class="req-method">
+                        <div class="req-badge get-meth">get</div>
+                        <span><code>/profiles</code></span>
+                    </div>
+                    <p>Renvoie la liste de tous les profils.</p>
+                    <h5>Réponses</h5>
+                    <ul>
+                        <li>
+                            200 - OK
+                            <pre>
+                                <code>
+[
+    {
+        "image": "Chemmin vers  l'image de profil",
+        "accountName": "Nom du compte",
+        "username": "Nom d'utilisateur",
+        "bio": "Bio du profile",
+        "links": {
+                "location": "Lien de la localisation",
+                "website": "Lien vers le site internet"
+            },
+        "join_date": "Date d'inscription",
+        "following": "Nombre de compte suivis",
+        "followers": "Nombre de d'abonnés",
+        "id": "cbc1"
+    },
+]
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Ressource 2</h4>
+                <div>
+                    <div class="req-method">
+                        <div class="req-badge get-meth">get</div>
+                        <span><code>endpoint</code></span>
+                    </div>
+                    <p>Description de la ressource.</p>
+                    <h5>Réponses</h5>
+                    <ul>
+                        <li>
+                            200 - OK
+                            <pre>
+                                <code>
+                                    Objet
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 </body>
