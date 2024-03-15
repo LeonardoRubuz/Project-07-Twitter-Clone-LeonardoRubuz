@@ -5,6 +5,7 @@ const fs = require("fs")
 //routers
 const tweetRouter = require('./routes/tweets');
 const profileRouter = require('./routes/profiles');
+const userRouter = require('./routes/user');
 
 app.use(cors());
 app.use(express.json())
@@ -16,6 +17,7 @@ app.get('/', (req, res) => {
 
 app.use(tweetRouter)
 app.use("/profiles",profileRouter)
+app.use("/user",userRouter)
 
 
 app.listen(5500, () => {
