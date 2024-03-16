@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Twitter API</title>
 </head>
 <body>
     <nav>
@@ -162,14 +162,29 @@
                         <div class="req-badge get-meth">get</div>
                         <span><code>/tweets</code></span>
                     </div>
-                    <p>Description de la ressource.</p>
+                    <p>Retourne la liste de tous les tweets enregistrés.</p>
                     <h5>Réponses</h5>
                     <ul>
                         <li>
                             200 - OK
                             <pre>
                                 <code>
-                                    Objet
+[
+    {
+        "id": "Identifiant du tweet",
+        "avatar": "Chemin d'accès vers l'image de l'avatar de l'utilisateur",
+        "author": "Nom de compte de l'auteur",
+        "username": "Nom d'utilisateur de l'auteur",
+        "date": "Date d'ajout du Tweet",
+        "content": "Contenu textuel du Tweet",
+        "image": Contenu média du tweet,
+        "likesNumber": Nombre de likes du Tweet,
+        "commentsNumber": Nombre de commentaires du Tweet,
+        "retweetsNumber": Nombre de retweets du Tweet,
+        "isLiked": Statut de like du Tweet,
+        "isRetweeted": Statut de retweet du Tweet
+    },
+]
                                 </code>
                             </pre>
                         </li>
